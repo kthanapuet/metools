@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="resources/vendor/bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/vendor/fontawesome-free-5_3_1/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        #custom-nav {
+            /* -webkit-box-shadow: 10px 10px 10px #FC0; */
+            /* -moz-box-shadow:    10px 10px 10px #FC0; */
+            box-shadow:0 3px 4px 0 rgba(0,0,0,0.2), 0 3px 3px -2px rgba(0,0,0,0.14), 0 1px 8px 0 rgba(0,0,0,0.12);
+            z-index:1;
+        }
+
+        .show-shadow{
+            box-shadow:0 3px 4px 0 rgba(0,0,0,0.2), 0 3px 3px -2px rgba(0,0,0,0.14), 0 1px 8px 0 rgba(0,0,0,0.12);
+        }
+
+        .navbar-login
+        {
+            width: 305px;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+
+        .navbar-login-session
+        {
+            padding: 10px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        .icon-size
+        {
+            font-size: 87px;
+        }
+
+        #buy-sell-box .home-sell-button {
+            width: 140px;
+            height: 140px;
+            background-color: #f70;
+            border-radius: 70px;
+            background-image: url(//ast.kaidee.com/blackpearl/fb92ec1…/images/sell-button.png);
+            background-repeat: no-repeat;
+        }
+        #buy-sell-box a {
+            display: block;
+            margin: 0 auto .8em;
+            color: transparent;
+            background-size: 100%;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav style="background-color: #1A73E8" class="navbar navbar-expand-md navbar-dark show-shadow">
+        <a class="navbar-brand" href="#">MeTools</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="nav-click-map" href="#" title="My location"> <i class="fas fa-map-marked-alt"></i> Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i> My location</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown04" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Right</a>
+                </li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="fas fa-question-circle"></i> Help</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="fas fa-user"></i> Member</a>
+                    <ul class="dropdown-menu dropdown-menu-right show-shadow">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="resources/members/member_markz.jpg" style="width: 90px;">
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-left"><strong>Nombre Apellido</strong></p>
+                                        <p class="text-left small">correoElectronico@email.com</p>
+                                        <p class="text-left">
+                                            <a href="#" class="btn btn-primary btn-block btn-sm">Actualizar Datos</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a href="#" class="btn btn-danger btn-block">Cerrar Sesion</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="div-action-bar">
+
+        <!-- <div class="card" style="width: 18rem;">
+                <i class="fab fa-accessible-icon  fa-5x"></i>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div> -->
+    </div>
+    <div class="container-fluid" style="padding-top: 10px;">
+        <div class="row">
+            <div class="col-md-12">
+                Search control
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-map-marked-alt"></i></a>
+                        </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <hr>
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div id="div-results" class="row">
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <img src="resources/images/sample_map.JPG" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="resources/vendor/jquery/jquery-3.3.1.js"></script>
+    <script src="resources/vendor/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav-click-map').on('click', function (e) {
+                    // alert(1);
+                    $('#pills-profile-tab').tab('show');
+                    $('#pills-home-tab').removeClass('active');
+            })
+
+            $("#div-results").append(function(){
+                var divItems = '';
+                for (let index = 0; index < 10; index++) {
+                    divItems += '<div class="col-12 col-sm-6 col-md-3 ">';
+                    divItems += '<div class="card show-shadow" style="margin-bottom: 5px;">';
+                    divItems += '<img class="card-img-top" src="resources/members/'+(index+1)+'.jpg" alt="Card image cap">';
+                    divItems += '<div class="card-body">';
+                    divItems += '<h6 class="card-title">Karoon sillapapan</h6>';
+                    divItems += '<p class="card-text"> <i class="fas fa-map-marker-alt"></i> ตำบล หนองมะค่าโมง อำเภอ ด่านช้าง สุพรรณบุรี 72180</p>';
+                    divItems += '<p class="card-text"> <i class="fas fa-dollar-sign"></i> 2,000 บาท/ไร่ </p>';
+                    divItems += '<p class="card-text"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></p>';
+                    divItems += '<a href="#" title="Read more" class="btn btn-primary btn-sm"><i class="fas fa-address-card"></i></a>';
+                    divItems += '</div>';
+                    divItems += '</div>';
+                    divItems += '</div>';
+                }
+                return divItems;
+            });
+        });
+        
+        function genRow(){
+
+        }
+    </script>
+</body>
+
+</html>
